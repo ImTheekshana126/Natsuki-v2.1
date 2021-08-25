@@ -5,7 +5,7 @@ from sys import argv
 from typing import Optional
 from pyrogram import filters, idle
 
-from Sophia import (
+from EzilaXBotV import (
     ALLOW_EXCL,
     CERT_PATH,
     DONATION_LINK,
@@ -26,10 +26,10 @@ from Sophia import (
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from Sophia.modules import ALL_MODULES
-from Sophia.modules.helper_funcs.chat_status import is_user_admin
-from Sophia.modules.helper_funcs.misc import paginate_modules
-from Sophia.modules.sudoers import bot_sys_stats
+from EzilaXBotV.modules import ALL_MODULES
+from EzilaXBotV.modules.helper_funcs.chat_status import is_user_admin
+from EzilaXBotV.modules.helper_funcs.misc import paginate_modules
+from EzilaXBotV.modules.sudoers import bot_sys_stats
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
     BadRequest,
