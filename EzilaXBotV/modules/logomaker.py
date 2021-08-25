@@ -182,7 +182,7 @@ async def lego(event):
    await event.reply(f'Error Go to Help From  @Ezila_Support, {e}')
 
 
-@register(pattern="^/Devillogo ?(.*)")
+@register(pattern="^/devillogo ?(.*)")
 async def lego(event):
  quew = event.pattern_match.group(1)
  if event.sender_id == OWNER_ID:
@@ -229,6 +229,6 @@ __help__ = """
  ❍ /logo text :  Create your logo with your name
  ❍ /rlogo text :  Create your logo Bigger Than `logo`
  ❍ /wlogo text :  Create your logo with your name
- ❍ /Devillogo text :  Create your logo with your name
+ ❍ /devillogo text :  Create your logo with your name
  """
 __mod_name__ = "Logo Maker"
