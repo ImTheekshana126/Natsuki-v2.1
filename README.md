@@ -6,6 +6,9 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Sadew451/EzilaXBot-V2.1.git)
 
+# Contributors
+
+![GitHub Contributors Image](https://contrib.rocks/image?repo=Sadew451/EzilaXBot-v2.1)
 
 ### Video Tutorial:
 Complete guide on deploying @EzilaXBot's clone on Heroku.
