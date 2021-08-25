@@ -80,7 +80,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="📜Source", url="Github.com/Sadew451/EzilaXBot-V2"
+            text="Source 🗒️", url="Github.com/Sadew451/EzilaXBot-V2"
         ),
         InlineKeyboardButton(
             text="Commands Help ❓", url="http://t.me/EzilaXBot?start=help"
@@ -94,7 +94,7 @@ buttons = [
     ],
 ]
 
-EZILAX_IMG = "https://telegra.ph/file/584b1539d736325fab377.jpg"
+EZILAX_IMG = "https://telegra.ph/file/48a1645cc447a2ac1dae0.png"
 
 HELP_STRINGS = f"""
 *Main Commands :* [🤖]()
@@ -390,7 +390,7 @@ def AnkiVector_about_callback(update, context):
                             text="🗒 Terms and Conditions", callback_data="aboutmanu_tac"
                         ),
                     ],
-                    [InlineKeyboardButton(text="Help", callback_data="help_back")],
+                    [InlineKeyboardButton(text="Help ❔", callback_data="help_back")],
                     [InlineKeyboardButton(text="Back", callback_data="aboutmanu_back")],
                 ]
             ),
