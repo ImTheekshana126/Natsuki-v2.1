@@ -127,7 +127,7 @@ async def lego(event):
     pointsize = 500
     fillcolor = "gold"
     shadowcolor = "blue"
-    font = ImageFont.truetype("./EzilaXBotV/resources/Chopsic.otf", 950)
+    font = ImageFont.truetype("./EzilaXBotV/resources/LeanForeword-MR0x.ttf", 950)
     w, h = draw.textsize(text, font=font)
     h += int(h*0.21)
     image_width, image_height = img.size
@@ -197,7 +197,7 @@ async def lego(event):
  await event.reply("Creating your logo...wait!")
  try:
     text = event.pattern_match.group(1)
-    img = Image.open('./EzilaXBotV/resources/DevilLogo.jpg')
+    img = Image.open('./EzilaXBotV/resources/blackbg.jpg')
     draw = ImageDraw.Draw(img)
     image_widthz, image_heightz = img.size
     pointsize = 500
