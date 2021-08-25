@@ -90,7 +90,7 @@ async def lego(event):
     pointsize = 500
     fillcolor = "gold"
     shadowcolor = "blue"
-    font = ImageFont.truetype("./EzilaXBotV/resources/HalloweenNight-vmyPD.ttf", 330)
+    font = ImageFont.truetype("./EzilaXBotV/resources/Chopsic.otf", 330)
     w, h = draw.textsize(text, font=font)
     h += int(h*0.21)
     image_width, image_height = img.size
@@ -127,7 +127,7 @@ async def lego(event):
     pointsize = 500
     fillcolor = "gold"
     shadowcolor = "blue"
-    font = ImageFont.truetype("./EzilaXBotV/resources/LeanForeword-MR0x.ttf", 950)
+    font = ImageFont.truetype("./EzilaXBotV/resources/Chopsic.otf", 950)
     w, h = draw.textsize(text, font=font)
     h += int(h*0.21)
     image_width, image_height = img.size
@@ -203,7 +203,7 @@ async def lego(event):
     pointsize = 500
     fillcolor = "white"
     shadowcolor = "blue"
-    font = ImageFont.truetype("./EzilaXBotV/resources/LeanForeword-MR0x.ttf", 1000)
+    font = ImageFont.truetype("./EzilaXBotV/resources/Chopsic.otf", 1000)
     w, h = draw.textsize(text, font=font)
     h += int(h*0.21)
     image_width, image_height = img.size
