@@ -182,7 +182,7 @@ async def lego(event):
    await event.reply(f'Error Go to Help From  @Ezila_Support, {e}')
 
 
-@register(pattern="^/pandalogo ?(.*)")
+@register(pattern="^/Devillogo ?(.*)")
 async def lego(event):
  quew = event.pattern_match.group(1)
  if event.sender_id == OWNER_ID:
@@ -197,20 +197,20 @@ async def lego(event):
  await event.reply("Creating your logo...wait!")
  try:
     text = event.pattern_match.group(1)
-    img = Image.open('./EzilaXBotV/resources/pandalogo.jpg')
+    img = Image.open('./EzilaXBotV/resources/DevilLogo.jpg')
     draw = ImageDraw.Draw(img)
     image_widthz, image_heightz = img.size
     pointsize = 500
     fillcolor = "white"
     shadowcolor = "blue"
-    font = ImageFont.truetype("./EzilaXBotV/resources/Maghrib.ttf", 1000)
+    font = ImageFont.truetype("./EzilaXBotV/resources/LeanForeword-MR0x.ttf", 1000)
     w, h = draw.textsize(text, font=font)
     h += int(h*0.21)
     image_width, image_height = img.size
     draw.text(((image_widthz-w)/2, (image_heightz-h)/2), text, font=font, fill=(255, 255, 255))
     x = (image_widthz-w)/2
     y= ((image_heightz-h)/2+6)
-    draw.text((x, y), text, font=font, fill="black", stroke_width=0, stroke_fill="green")
+    draw.text((x, y), text, font=font, fill="yellow", stroke_width=0, stroke_fill="red")
     fname2 = "EzilaXBotVLogo.png"
     img.save(fname2, "png")
     await tbot.send_file(event.chat_id, fname2, caption="Made By @EzilaXBot ❤️")
@@ -229,6 +229,6 @@ __help__ = """
  ❍ /logo text :  Create your logo with your name
  ❍ /rlogo text :  Create your logo Bigger Than `logo`
  ❍ /wlogo text :  Create your logo with your name
- ❍ /pandalogo text :  Create your logo with your name
+ ❍ /Devillogo text :  Create your logo with your name
  """
 __mod_name__ = "Logo Maker"
