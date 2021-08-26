@@ -1,6 +1,6 @@
 # EzilaX Based on Python Telegram Bot ![GitHub repo size](https://img.shields.io/github/repo-size/Sadew451/EzilaXBot-V2?label=Repo%20Size)
 
-<p align="center"><a href="https://t.me/Ezila_Support"><img src="https://telegra.ph/file/f3f7e2c4447bf96d4ea45.jpg" width="400"></a></p>
+<p align="center"><a href="https://t.me/Ezila_Support"><img src="https://telegra.ph/file/0185237db647fd0cf294f.png" width="400"></a></p>
 <p align="center">
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Sadew451/EzilaXBot-V2.1.git)
