@@ -1,46 +1,42 @@
-# Copyright (C) 2021 TeamSDBOTs
-
-
-# This file is part of EzilaX (Telegram Bot)
-
-# This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU Affero General Public License as
-# published by the Free Software Foundation, either version 3 of the
-# License, or (at your option) any later version.
-
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU Affero General Public License for more details.
-
-# You should have received a copy of the GNU Affero General Public License
-# along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-
 import os
 
 import cloudmersive_virus_api_client
+from pymongo import MongoClient
 from telethon.tl import functions, types
 from telethon.tl.types import DocumentAttributeFilename, MessageMediaDocument
 
-from EzilaXBotV.config import get_str_key
-from EzilaXBotV.services.events import register
-from EzilaXBotV.services.telethon import tbot
+from EzilaXBotV import MONGO_DB_URI, VIRUS_API_KEY
+from EzilaXBotV import telethn as tbot
+from EzilaXBotV.events import register
+
+client = MongoClient()
+client = MongoClient(MONGO_DB_URI)
+db = client["missjuliarobot"]
+approved_users = db.approve
 
 
 async def is_register_admin(chat, user):
     if isinstance(chat, (types.InputPeerChannel, types.InputChannel)):
+
         return isinstance(
             (
                 await tbot(functions.channels.GetParticipantRequest(chat, user))
             ).participant,
             (types.ChannelParticipantAdmin, types.ChannelParticipantCreator),
         )
-    if isinstance(chat, types.InputPeerUser):
-        return True
+    if isinstance(chat, types.InputPeerChat):
+
+        ui = await tbot.get_peer_id(user)
+        ps = (
+            await tbot(functions.messages.GetFullChatRequest(chat.chat_id))
+        ).full_chat.participants.participants
+        return isinstance(
+            next((p for p in ps if p.user_id == ui), None),
+            (types.ChatParticipantAdmin, types.ChatParticipantCreator),
+        )
+    return None
 
 
-VIRUS_API_KEY = get_str_key("VIRUS_API_KEY", required=False)
 configuration = cloudmersive_virus_api_client.Configuration()
 configuration.api_key["Apikey"] = VIRUS_API_KEY
 api_instance = cloudmersive_virus_api_client.ScanApi(
@@ -56,8 +52,14 @@ allow_password_protected_files = True
 async def virusscan(event):
     if event.fwd_from:
         return
+    approved_userss = approved_users.find({})
+    for ch in approved_userss:
+        iid = ch["id"]
+        userss = ch["user"]
     if event.is_group:
         if await is_register_admin(event.input_chat, event.message.sender_id):
+            pass
+        elif event.chat_id == iid and event.sender_id == userss:
             pass
         else:
             return
@@ -86,7 +88,7 @@ async def virusscan(event):
     try:
         virus = c.file.name
         await event.client.download_file(c, virus)
-        gg = await event.reply("Scanning the file ...")
+        gg = await event.reply("Scanning the file...")
         fsize = c.file.size
         if not fsize <= 3145700:  # MAX = 3MB
             await gg.edit("File size exceeds 3MB")
@@ -108,9 +110,3 @@ async def virusscan(event):
         os.remove(virus)
         await gg.edit("Some error occurred.")
         return
-
-
-_mod_name_ = "Virus Scan"
-_help_ = """
- - /scanit: Scan a file for virus (MAX SIZE = 3MB)
- """
