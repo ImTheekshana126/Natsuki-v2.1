@@ -226,9 +226,8 @@ def start(update: Update, context: CallbackContext):
 
         else:
             update.effective_user.first_name
-            update.effective_message.reply_photo(
-                EZILAX_IMG,
-                caption=PM_START_TEXT,
+            update.effective_message.reply_text(
+                PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
