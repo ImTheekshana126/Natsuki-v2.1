@@ -27,7 +27,7 @@ from telethon import events
 
 from EzilaXBotV import telethn as tbot
 
-@tbot.on(events.NewMessage(pattern="^/sbook (.*)"))
+@tbot.on(events.NewMessage(pattern="^/book (.*)"))
 async def _(event):
     if event.fwd_from:
         return
@@ -64,14 +64,14 @@ async def _(event):
                 f.write("\n" + title)
                 f.write("\nBook link:- " + link + "\n\n")
 
-        f.write("By @EzilaXBot.")
+        f.write("By @EzilaXBot ❤ .")
         f.close()
-        caption = "A collabration with Friday.\n Join Support @Ezila_Support"
+        caption = "A collabration with Friday.\n Join Support @EZILA_SUPPORT ❤"
 
         await tbot.send_file(
             event.chat_id,
             "book.txt",
-            caption=f"**BOOKS GATHERED SUCCESSFULLY!\n\nBY @EzilaXBot. JOIN THE SUPPORT @Ezila_Support.**",
+            caption=f"**BOOKS GATHERED SUCCESSFULLY!\n\nBY @EzilaXBot. JOIN THE SUPPORT @EZILA_SUPPORT.**",
         )
         os.remove("book.txt")
         await KkK.delete()
