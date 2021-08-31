@@ -1,4 +1,4 @@
-# This file is part of EzilaX (Telegram Bot)
+# This file is part of Daisy (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -16,7 +16,7 @@
 
 from telethon import TelegramClient
 
-from EzilaXBotV.config import get_int_key, get_str_key
+from EzilaXBotV.conf import get_int_key, get_str_key
 
 TOKEN = get_str_key("TOKEN", required=True)
 NAME = TOKEN.split(":")[0]
@@ -25,5 +25,5 @@ tbot = TelegramClient(
     NAME, get_int_key("API_ID", required=True), get_str_key("API_HASH", required=True)
 )
 
-# Telethon
+# Telethon> V3.0
 tbot.start(bot_token=TOKEN)
