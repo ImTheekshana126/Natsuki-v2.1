@@ -1,3 +1,22 @@
+# Copyright (C) 2021 TeamSDBOTs
+
+
+# This file is part of EzilaX (Telegram Bot)
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
 import io
 import os
 from datetime import datetime
@@ -7,7 +26,7 @@ from telethon import types
 from telethon.tl import functions
 
 from EzilaXBotV.config import get_str_key
-from EzilaXBotV.events import register
+from EzilaXBotV.services.events import register
 from EzilaXBotV.services.telethon import tbot
 
 REM_BG_API_KEY = get_str_key("REM_BG_API_KEY", required=False)
@@ -75,7 +94,7 @@ async def _(event):
         await event.reply("Background Removed in {} seconds".format(ms))
     else:
         await event.reply(
-            "remove.bg API returned Errors. Please report to @EZILA_SUPPORT\n`{}".format(
+            "remove.bg API returned Errors. Please report to @Ezila_Support\n`{}".format(
                 output_file_name.content.decode("UTF-8")
             )
         )
