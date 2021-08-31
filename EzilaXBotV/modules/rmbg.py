@@ -6,7 +6,7 @@ import requests
 from telethon import types
 from telethon.tl import functions
 
-from EzilaXBotV.config import get_str_key
+from EzilaXBotV.conf import get_str_key
 from EzilaXBotV.events import register
 from EzilaXBotV.services.telethon import tbot
 
