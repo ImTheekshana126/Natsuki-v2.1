@@ -7,7 +7,7 @@
 
 # Contributors
 
-![GitHub Contributors Image](https://contrib.rocks/image?repo=Sadew451/EzilaXBot-v2.1)
+![GitHub Contributors Image](https://contrib.rocks/image?repo=Sadew451/EzilaXBot-v2.1) ❤
   
 ### Video Tutorial:
 Complete guide on deploying @EzilaXBot's clone on Heroku.
