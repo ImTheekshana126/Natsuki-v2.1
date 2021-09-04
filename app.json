@@ -1,15 +1,15 @@
 {
-      "name": "EzilaX",
+      "name": "Natsuki",
       "description": "An Anime themed Telegram group management bot.",
-      "logo": "https://telegra.ph/file/584b1539d736325fab377.jpg",
+      "logo": "https://telegra.ph/file/a6281ecaae26667a13716.png",
       "keywords": [
          "telegram",
          "anime",
          "group",
          "manager",
-         "EzilaXBot"
+         "TheNutsukiBot"
       ],   
-   "repository": "https://github.com/Sadew451/EzilaXBot-V2.1",
+   "repository": "https://github.com/Sadew451/Natsuki-V2.1",
    "addons": [
       {
          "options": {
@@ -197,8 +197,8 @@
       "anime",
       "group",
       "manager",
-      "EzilaX"
+      "Natsuki"
    ],
-   "name": "EzilaXBot",
-   "repository": "https://github.com/Sadew451/EzilaXBot-V2"
+   "name": "TheNatsukiBot",
+   "repository": "https://github.com/Sadew451/Natsuki-V2.1"
 }
