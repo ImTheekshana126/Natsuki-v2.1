@@ -1,24 +1,24 @@
-<p align="center"><a href="https://t.me/Ezila_Support"><img src="https://telegra.ph/file/0185237db647fd0cf294f.png" width="400"></a></p>
+<p align="center"><a href="https://t.me/NutsukiSupport_Official"><img src="https://telegra.ph/file/a6281ecaae26667a13716.png" width="400"></a></p>
 <p align="center">
 
-# EzilaX Based on Python Telegram Bot ![GitHub repo size](https://img.shields.io/github/repo-size/Sadew451/EzilaXBot-V2?label=Repo%20Size)
+# Natsuki Based on Python Telegram Bot ![GitHub repo size](https://img.shields.io/github/repo-size/Sadew451/Natsuki-v2.1?label=Repo%20Size)
   
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Sadew451/EzilaXBot-V2.1.git)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Sadew451/Natsuki-v2.1.git)
 
 # Contributors
 
-![GitHub Contributors Image](https://contrib.rocks/image?repo=Sadew451/EzilaXBot-v2.1)
+![GitHub Contributors Image](https://contrib.rocks/image?repo=Sadew451/Natsuki-v2.1)
   
 ### Video Tutorial:
-Complete guide on deploying @EzilaXBot's clone on Heroku.
+Complete guide on deploying @TheNutsukiBot's clone on Heroku.
 
 ☆ Video by [Sadew Jayasekara](https://www.youtube.com/channel/UCdSBUUQ1v0_IIElBR_1B72w) ☆
 [![YouTube](https://img.shields.io/badge/YouTube-Video%20Tutorial-red?logo=youtube)](https://youtu.be/fcXPoq4FcWw)
 
-## New version Avaiilable on Telegram as [EzilaXBot](https://t.me/EzilaXBot)
+## New version Avaiilable on Telegram as [@TheNusukiBot](https://t.me/TheNusukiBot)
 
 
-## EzilaXBot is the latest
+## TheNusukiBot is the latest
 
 
 The bot is based on the original work done by [PaulSonOfLars](https://github.com/PaulSonOfLars)
@@ -26,12 +26,12 @@ This repo was just revamped to suit an Anime-centric community. All original cre
 
 All other credits mentioned on top of scripts
 
-Should any be missing kindly let us know at [EzilaXBot](https://t.me/Ezila_Updates) or simply submit a pull request on the readme.
+Should any be missing kindly let us know at [TheNusukiBot](https://t.me/Natsuki_Updates) or simply submit a pull request on the readme.
 
-## EzilaX bot the telegram Bot Project
+## TheNusukiBot bot the telegram Bot Project
 The Advanced Branch (For PRO's)
 
-The EzilaX bot(advanced)
+The TheNusukiBot bot(advanced)
 
 ### Credits ❤
 <details><summary>All Credits Here</summary>
